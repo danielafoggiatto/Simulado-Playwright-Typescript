@@ -1,58 +1,67 @@
-Gerador de Simulado Playwright + TypeScript
 
-Este script gera automaticamente um simulado de perguntas objetivas sobre Playwright e TypeScript em formato HTML interativo, com respostas ocultas que podem ser exibidas ao clicar em um botão.
 
-Conteúdo
+---
 
-gerar_simulado_playwright.py → Script Python que cria o HTML.
+# Gerador de Simulado Playwright + TypeScript
 
-simulado_playwright.html → Arquivo HTML gerado com todas as perguntas e respostas.
+Este script gera automaticamente um **simulado de perguntas objetivas sobre Playwright e TypeScript** em formato HTML interativo, com respostas ocultas que podem ser exibidas ao clicar em um botão.
 
-Requisitos
+## Conteúdo
 
-Python 3.x
+* `gerar_simulado_playwright.py` → Script Python que cria o HTML.
+* `simulado_playwright.html` → Arquivo HTML gerado com todas as perguntas e respostas.
 
-Nenhuma biblioteca externa necessária (usa apenas biblioteca padrão)
+---
 
-Como usar
+## Requisitos
 
-Abra o terminal na pasta onde está o arquivo gerar_simulado_playwright.py.
+* Python 3.x
+* Nenhuma biblioteca externa necessária (usa apenas biblioteca padrão)
 
-Execute o script Python:
+---
 
+## Como usar
+
+1. **Abra o terminal** na pasta onde está o arquivo `gerar_simulado_playwright.py`.
+
+2. **Execute o script Python:**
+
+```bash
 python gerar_simulado_playwright.py
+```
 
+> Se estiver usando Python 3 especificamente, em alguns sistemas pode ser necessário:
 
-Se estiver usando Python 3 especificamente, em alguns sistemas pode ser necessário:
-
+```bash
 python3 gerar_simulado_playwright.py
+```
 
+3. **O script irá gerar um arquivo HTML:**
 
-O script irá gerar um arquivo HTML:
-
+```text
 simulado_playwright.html
+```
 
+4. **Abra o HTML no navegador:**
 
-Abra o HTML no navegador:
+* Windows: clique duas vezes no arquivo ou use `start simulado_playwright.html` no terminal.
+* Mac: `open simulado_playwright.html`
+* Linux: `xdg-open simulado_playwright.html`
 
-Windows: clique duas vezes no arquivo ou use start simulado_playwright.html no terminal.
+---
 
-Mac: open simulado_playwright.html
+## Como funciona
 
-Linux: xdg-open simulado_playwright.html
+* Cada pergunta aparece com um **botão “Verificar resposta”**.
+* Ao clicar no botão, a resposta correspondente será exibida.
+* Perguntas podem ser facilmente editadas ou adicionadas diretamente na lista `perguntas` do script.
 
-Como funciona
+---
 
-Cada pergunta aparece com um botão “Verificar resposta”.
+## Personalizações possíveis
 
-Ao clicar no botão, a resposta correspondente será exibida.
+* Alterar cores de borda, botões e fontes diretamente no `<style>` do HTML.
+* Adicionar novas perguntas ao final da lista `perguntas`.
+* Ajustar timeout ou efeitos de exibição, se necessário.
 
-Perguntas podem ser facilmente editadas ou adicionadas diretamente na lista perguntas do script.
-
-Personalizações possíveis
-
-Alterar cores de borda, botões e fontes diretamente no <style> do HTML.
-
-Adicionar novas perguntas ao final da lista perguntas.
-
-Ajustar timeout ou efeitos de exibição, se necessário.
+---
